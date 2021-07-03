@@ -2,140 +2,12 @@
 //
 
 #include <iostream>
-#include "main.h"
+#include "main.h" // Brings in customer
+#include "..\Core\Core.h"
 
-
-void Core::make(std::string dish) {
-    // Can fix this if later during translation implementation
-    std::cout << "Making a";
-    if (dish == "Asparagus") {
-        std::cout << "n";
-    }
-    std::cout << " " << dish << "!\n";
-}
-
-void Core::cook(std::string dish) {
-    // Can fix this if later during translation implementation
-    std::cout << "Cooking a";
-    if (dish == "Asparagus") {
-        std::cout << "n";
-    }
-    std::cout << " " << dish << "!\n";
-}
-
-Customer::Customer(std::string n) {
-    name = n;
-};
-
-void Customer::order_food(std::string food_item) {
-    std::cout << name << " is ordering " << food_item << ".\n";
-};
-
-void Customer::pay_for_food(int food_price) {
-    std::cout << name << " has paid " << food_price << " dollars.\n";
-};
-
-
-void Meatloaf::make_meatloaf() {
-    Core::make("Meatloaf");
-}
-void Meatloaf::cook_meatloaf() {
-    Core::cook("Meatloaf");
-}
-
-void Cake::make_cake() {
-    Core::make("Cake");
-}
-void Cake::cook_cake() {
-    Core::cook("Cake");
-}
-
-void Asparagus::make_asparagus() {
-    Core::make("Asparagus");
-}
-void Asparagus::cook_asparagus() {
-    Core::cook("Asparagus");
-}
-
-
-RestaurantOwner::RestaurantOwner() {
-    dirty_tables = 0;
-    total_sales = 0;
-
-    lunch_prices[0] = 5;
-    lunch_prices[1] = 12;
-    lunch_prices[2] = 2;
-
-    standard_prices[0] = 10;
-    standard_prices[1] = 24;
-    standard_prices[2] = 4;
-};
-
-void RestaurantOwner::set_prices(std::string meal) {
-    std::cout << "= = = = =\nThe RestaurantOwner is setting " << meal << " prices.\n= = = = =\n\n";
-    if (meal == "lunch") {
-        Meatloaf::price = lunch_prices[0];
-        Cake::price = lunch_prices[1];
-        Asparagus::price = lunch_prices[2];
-    }
-    else {
-        Meatloaf::price = standard_prices[0];
-        Cake::price = standard_prices[1];
-        Asparagus::price = standard_prices[2];
-    }
-}
-
-void RestaurantOwner::cleanup_tables() {
-    if (dirty_tables < 0) {
-        // Throw some error
-    }
-    while (dirty_tables > 0) {
-        std::cout << "The RestaurantOwner is cleaning a table.\n";
-        RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables - 1;
-    }
-    std::cout << "\n";
-}
-
-void RestaurantOwner::sell_meatloaf(Customer c) {
-    c.order_food("Meatloaf");
-    Meatloaf::make_meatloaf();
-    Meatloaf::cook_meatloaf();
-
-    c.pay_for_food(Meatloaf::price);
-    total_sales = total_sales + Meatloaf::price;
-    RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
-
-    std::cout << "\n";
-}
-
-void RestaurantOwner::sell_cake(Customer c) {
-    c.order_food("Cake");
-    Cake::make_cake();
-    Cake::cook_cake();
-
-    c.pay_for_food(Cake::price);
-    total_sales = total_sales + Cake::price;
-    RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
-
-    std::cout << "\n";
-}
-
-void RestaurantOwner::sell_asparagus(Customer c) {
-    c.order_food("Asparagus");
-    Asparagus::make_asparagus();
-    Asparagus::cook_asparagus();
-
-    c.pay_for_food(Asparagus::price);
-    total_sales = total_sales + Asparagus::price;
-    RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
-
-    std::cout << "\n";
-}
-
-void RestaurantOwner::get_total_sales() {
-    std::cout << "The total sales for the RestaurantOwner is " << total_sales << "!!!\n\n";
-}
-
+#include "..\Asparagus\Asparagus.h"
+#include "..\Cake\Cake.h"
+#include "..\Meatloaf\Meatloaf.h"
 
 
 // Names are selected as the nth result from the following links: 
@@ -210,9 +82,9 @@ void dinner_rush(RestaurantOwner* restaurant_owner) {
 
 // Initialize dish prices
 // If the RestaurantOwner doesn't set them it's their loss!!
-int Meatloaf::price = 0;
-int Asparagus::price = 0;
-int Cake::price = 0;
+//int Meatloaf::price = 0;
+//int Asparagus::price = 0;
+//int Cake::price = 0;
 
 
 int main()
