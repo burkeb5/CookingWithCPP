@@ -21,11 +21,8 @@ extern ASPARAGUS_API int nAsparagus;
 
 ASPARAGUS_API int fnAsparagus(void);
 
-// Mine
-
 class ASPARAGUS_API Asparagus {
 public:
-	static int price;
 	static void make_asparagus();
 	static void cook_asparagus();
 };

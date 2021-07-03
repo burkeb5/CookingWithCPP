@@ -1,1 +1,2 @@
-﻿
+﻿UILibrary.obj : error LNK2019: unresolved external symbol "void __cdecl breakfast_rush(class RestaurantOwner *)" (?breakfast_rush@@YAXPAVRestaurantOwner@@@Z) referenced in function _main
+C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\UILibrary.exe : fatal error LNK1120: 1 unresolved externals

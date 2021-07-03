@@ -21,11 +21,8 @@ extern MEATLOAF_API int nMeatloaf;
 
 MEATLOAF_API int fnMeatloaf(void);
 
-// Mine
-
 class MEATLOAF_API Meatloaf {
 public:
-	static int price;
 	static void make_meatloaf();
 	static void cook_meatloaf();
 };

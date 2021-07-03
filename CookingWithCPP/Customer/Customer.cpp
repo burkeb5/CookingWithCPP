@@ -22,17 +22,12 @@ CCustomer::CCustomer()
     return;
 }
 
-CUSTOMER_API Customer::Customer(std::string n) {
-//    name = n;
-};
+CUSTOMER_API Customer::Customer() {};
 
 void CUSTOMER_API Customer::order_food(std::string food_item) {
-    //std::cout << name << " is ordering " << food_item << ".\n";
     std::cout << "A customer is ordering " << food_item << ".\n";
 };
 
-
 void CUSTOMER_API Customer::pay_for_food(int food_price) {
-    //std::cout << name << " has paid " << food_price << " dollars.\n";
     std::cout << "A customer has paid " << food_price << " dollars.\n";
 };

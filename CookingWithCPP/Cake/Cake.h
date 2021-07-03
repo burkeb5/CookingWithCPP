@@ -23,7 +23,6 @@ CAKE_API int fnCake(void);
 
 class CAKE_API Cake {
 public:
-	static int price;
 	static void make_cake();
 	static void cook_cake();
 };

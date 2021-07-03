@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "main.h" // Brings in customer
+#include "CookingWithCPP.h"
 #include "..\Core\Core.h"
 
 #include "..\Asparagus\Asparagus.h"
@@ -10,17 +10,11 @@
 #include "..\Meatloaf\Meatloaf.h"
 
 
-// Names are selected as the nth result from the following links: 
-// https://www.bounty.com/pregnancy-and-birth/baby-names/baby-name-search/a
-// https://www.bounty.com/pregnancy-and-birth/baby-names/baby-name-search/c
-// https://www.bounty.com/pregnancy-and-birth/baby-names/baby-name-search/m
-
 void breakfast_rush(RestaurantOwner* restaurant_owner) {
-    restaurant_owner->set_prices("breakfast");
 
-    Customer sweet_tooth_customer1 = Customer("Charlie");
-    Customer sweet_tooth_customer2 = Customer("Chloe");
-    Customer sweet_tooth_customer3 = Customer("Charlotte");
+    Customer sweet_tooth_customer1 = Customer();
+    Customer sweet_tooth_customer2 = Customer();
+    Customer sweet_tooth_customer3 = Customer();
 
     restaurant_owner->sell_cake(sweet_tooth_customer1);
     restaurant_owner->sell_cake(sweet_tooth_customer2);
@@ -30,19 +24,18 @@ void breakfast_rush(RestaurantOwner* restaurant_owner) {
 }
 
 void lunch_rush(RestaurantOwner* restaurant_owner) {
-    restaurant_owner->set_prices("lunch");
 
-    Customer hungry_customer1 = Customer("Mia");
-    Customer hungry_customer2 = Customer("Max");
-    Customer vegetarian_customer1 = Customer("Amelia");
-    Customer hungry_customer3 = Customer("Mason");
-    Customer sweet_tooth_customer4 = Customer("Connor");
-    Customer sweet_tooth_customer5 = Customer("Cameron");
-    Customer hungry_customer4 = Customer("Millie");
-    Customer hungry_customer5 = Customer("Maisie");
-    Customer vegetarian_customer2 = Customer("Alfie");
-    Customer sweet_tooth_customer6 = Customer("Conor");
-    Customer vegetarian_customer3 = Customer("Ava");
+    Customer hungry_customer1 = Customer();
+    Customer hungry_customer2 = Customer();
+    Customer vegetarian_customer1 = Customer();
+    Customer hungry_customer3 = Customer();
+    Customer sweet_tooth_customer4 = Customer();
+    Customer sweet_tooth_customer5 = Customer();
+    Customer hungry_customer4 = Customer();
+    Customer hungry_customer5 = Customer();
+    Customer vegetarian_customer2 = Customer();
+    Customer sweet_tooth_customer6 = Customer();
+    Customer vegetarian_customer3 = Customer();
     
     restaurant_owner->sell_meatloaf(hungry_customer1);
     restaurant_owner->sell_meatloaf(hungry_customer2);
@@ -58,15 +51,14 @@ void lunch_rush(RestaurantOwner* restaurant_owner) {
 }
 
 void dinner_rush(RestaurantOwner* restaurant_owner) {
-    restaurant_owner->set_prices("dinner");
 
-    Customer hungry_customer6 = Customer("Megan");
-    Customer vegetarian_customer4 = Customer("Archie");
-    Customer vegetarian_customer5 = Customer("Alexander");
-    Customer vegetarian_customer6 = Customer("Alice");
-    Customer sweet_tooth_customer7 = Customer("Caitlin");
-    Customer vegetarian_customer7 = Customer("Amy");
-    Customer hungry_customer7 = Customer("Mollie");
+    Customer hungry_customer6 = Customer();
+    Customer vegetarian_customer4 = Customer();
+    Customer vegetarian_customer5 = Customer();
+    Customer vegetarian_customer6 = Customer();
+    Customer sweet_tooth_customer7 = Customer();
+    Customer vegetarian_customer7 = Customer();
+    Customer hungry_customer7 = Customer();
 
     restaurant_owner->sell_meatloaf(hungry_customer6);
     restaurant_owner->sell_asparagus(vegetarian_customer4);
@@ -80,13 +72,6 @@ void dinner_rush(RestaurantOwner* restaurant_owner) {
 }
 
 
-// Initialize dish prices
-// If the RestaurantOwner doesn't set them it's their loss!!
-//int Meatloaf::price = 0;
-//int Asparagus::price = 0;
-//int Cake::price = 0;
-
-
 int main()
 {
     RestaurantOwner local_restaurant_owner = RestaurantOwner();
@@ -97,13 +82,6 @@ int main()
 
     local_restaurant_owner.get_total_sales();
 }
-
-
-
-
-
-
-
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

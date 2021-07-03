@@ -28,29 +28,7 @@ CRestaurantOwner::CRestaurantOwner()
 RESTAURANTOWNER_API RestaurantOwner::RestaurantOwner() {
     dirty_tables = 0;
     total_sales = 0;
-
-    lunch_prices[0] = 5;
-    lunch_prices[1] = 12;
-    lunch_prices[2] = 2;
-
-    standard_prices[0] = 10;
-    standard_prices[1] = 24;
-    standard_prices[2] = 4;
 };
-
-void RESTAURANTOWNER_API RestaurantOwner::set_prices(std::string meal) {
-    std::cout << "= = = = =\nThe RestaurantOwner is setting " << meal << " prices.\n= = = = =\n\n";
-    if (meal == "lunch") {
-        //Meatloaf::price = lunch_prices[0];
-        //Cake::price = lunch_prices[1];
-        //Asparagus::price = lunch_prices[2];
-    }
-    else {
-        //Meatloaf::price = standard_prices[0];
-        //Cake::price = standard_prices[1];
-        //Asparagus::price = standard_prices[2];
-    }
-}
 
 void RESTAURANTOWNER_API RestaurantOwner::cleanup_tables() {
     if (dirty_tables < 0) {
@@ -68,10 +46,9 @@ void RESTAURANTOWNER_API RestaurantOwner::sell_meatloaf(Customer c) {
     Meatloaf::make_meatloaf();
     Meatloaf::cook_meatloaf();
 
-    //c.pay_for_food(Meatloaf::price);
-    //total_sales = total_sales + Meatloaf::price;
-    c.pay_for_food(1);
-    total_sales = total_sales + 1;
+    int meatloaf_price = 10;
+    c.pay_for_food(meatloaf_price);
+    total_sales = total_sales + meatloaf_price;
     RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
 
     std::cout << "\n";
@@ -82,10 +59,9 @@ void RESTAURANTOWNER_API RestaurantOwner::sell_cake(Customer c) {
     Cake::make_cake();
     Cake::cook_cake();
 
-    //c.pay_for_food(Cake::price);
-    //total_sales = total_sales + Cake::price;
-    c.pay_for_food(1);
-    total_sales = total_sales + 1;
+    int cake_price = 24;
+    c.pay_for_food(cake_price);
+    total_sales = total_sales + cake_price;
     RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
 
     std::cout << "\n";
@@ -96,10 +72,9 @@ void RESTAURANTOWNER_API RestaurantOwner::sell_asparagus(Customer c) {
     Asparagus::make_asparagus();
     Asparagus::cook_asparagus();
 
-    //c.pay_for_food(Asparagus::price);
-    //total_sales = total_sales + Asparagus::price;
-    c.pay_for_food(1);
-    total_sales = total_sales + 1;
+    int asparagus_price = 4;
+    c.pay_for_food(asparagus_price);
+    total_sales = total_sales + asparagus_price;
     RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
 
     std::cout << "\n";
