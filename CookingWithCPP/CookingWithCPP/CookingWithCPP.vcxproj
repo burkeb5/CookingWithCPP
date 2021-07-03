@@ -142,7 +142,7 @@
     <ClCompile Include="CookingWithCPP.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h" />
+    <ClInclude Include="CookingWithCPP.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Customer\Customer.vcxproj">

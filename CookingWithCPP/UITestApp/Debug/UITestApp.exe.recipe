@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\Customer.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\Core.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\Asparagus.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\Cake.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\Meatloaf.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\RestaurantOwner.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\MidtermProj\tmp\CookingWithCPP\CookingWithCPP\Debug\UITestApp.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

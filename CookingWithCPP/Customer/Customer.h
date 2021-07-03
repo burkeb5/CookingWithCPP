@@ -25,9 +25,7 @@ CUSTOMER_API int fnCustomer(void);
 
 class CUSTOMER_API Customer {
 public:
-	Customer(std::string);
-
-	//static std::string name;
+	Customer();
 
 	void order_food(std::string);
 	void pay_for_food(int);

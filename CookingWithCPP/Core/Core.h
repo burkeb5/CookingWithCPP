@@ -21,8 +21,6 @@ extern CORE_API int nCore;
 
 CORE_API int fnCore(void);
 
-// Mine
-#include <iostream>
 #include <string>
 
 class CORE_API Core {

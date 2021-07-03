@@ -145,6 +145,9 @@
     <ProjectReference Include="..\CookingWithCPP\CookingWithCPP.vcxproj">
       <Project>{46d74c6b-0208-4634-81fb-f0b3cc958dca}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\RestaurantOwner\RestaurantOwner.vcxproj">
+      <Project>{06d0beef-21d5-4696-8f1d-57269dd53c1f}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -28,13 +28,9 @@ class RESTAURANTOWNER_API RestaurantOwner {
 public:
 	RestaurantOwner();
 
-	int lunch_prices[3];
-	int standard_prices[3];
-
 	int dirty_tables;
 	int total_sales;
 
-	void set_prices(std::string);
 	void cleanup_tables();
 	void sell_meatloaf(Customer);
 	void sell_cake(Customer);
