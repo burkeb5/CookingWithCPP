@@ -22,6 +22,7 @@ extern CORE_API int nCore;
 CORE_API int fnCore(void);
 
 #include <string>
+#include <boost/Locale.hpp>
 
 class CORE_API Core {
 public:

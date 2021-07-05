@@ -1,7 +1,7 @@
 // Core.cpp : Defines the exported functions for the DLL.
 //
-
 #include <iostream>
+#include <boost/Locale.hpp>
 #include "framework.h"
 #include "Core.h"
 
@@ -23,7 +23,7 @@ CCore::CCore()
 
 void Core::make(std::string dish) {
     // Can fix this if later during translation implementation
-    std::cout << "Making a";
+    std::cout << boost::locale::translate("Making a");
     if (dish == "Asparagus") {
         std::cout << "n";
     }
@@ -32,7 +32,7 @@ void Core::make(std::string dish) {
 
 void Core::cook(std::string dish) {
     // Can fix this if later during translation implementation
-    std::cout << "Cooking a";
+    std::cout << boost::locale::translate("Cooking a");
     if (dish == "Asparagus") {
         std::cout << "n";
     }

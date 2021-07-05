@@ -3,6 +3,7 @@
 
 #include "framework.h"
 
+#include <boost/Locale.hpp>
 #include <iostream>
 #include <string>
 #include "..\Core\Core.h"
@@ -25,10 +26,10 @@ CMeatloaf::CMeatloaf()
 }
 
 void MEATLOAF_API Meatloaf::make_meatloaf() {
-    std::cout << "Recieved order to make Meatloaf. Making...\n";
+    std::cout << boost::locale::translate("Recieved order to make Meatloaf. Making...") << std::endl;
     Core::make("Meatloaf");
 }
 void MEATLOAF_API Meatloaf::cook_meatloaf() {
-    std::cout << "Recieved order to cook Meatloaf. Cooking...\n";
+    std::cout << boost::locale::translate("Recieved order to cook Meatloaf. Cooking...") << std::endl;
     Core::cook("Meatloaf");
 }

@@ -2,6 +2,7 @@
 //
 
 #include "framework.h"
+#include <boost/Locale.hpp>
 #include <iostream>
 #include "RestaurantOwner.h"
 
@@ -35,7 +36,7 @@ void RESTAURANTOWNER_API RestaurantOwner::cleanup_tables() {
         // Throw some error
     }
     while (dirty_tables > 0) {
-        std::cout << "The RestaurantOwner is cleaning a table.\n";
+        std::cout << boost::locale::translate("The RestaurantOwner is cleaning a table.") << std::endl;
         RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables - 1;
     }
     std::cout << "\n";
@@ -81,7 +82,7 @@ void RESTAURANTOWNER_API RestaurantOwner::sell_asparagus(Customer c) {
 }
 
 void RESTAURANTOWNER_API RestaurantOwner::get_total_sales() {
-    std::cout << "The total sales for the RestaurantOwner is " << total_sales << "!!!\n\n";
+    std::cout << boost::locale::translate("The total sales for the RestaurantOwner is ") << total_sales << "!!!\n\n";
 }
 
 

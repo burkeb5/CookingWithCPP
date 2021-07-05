@@ -1,8 +1,8 @@
 // CookingWithCPP.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <boost/Locale.hpp>
 #include <iostream>
+#include <boost/Locale.hpp>
 #include "CookingWithCPP.h"
 #include "..\Core\Core.h"
 
