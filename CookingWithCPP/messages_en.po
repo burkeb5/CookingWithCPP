@@ -27,7 +27,7 @@ msgstr "Recieved order to cook Asparagus. Cooking..."
 
 #: Cake/Cake.cpp:28
 msgid "Recieved order to make Cake. Making..."
-msgstr Recieved order to make Cake. Making..."
+msgstr "Recieved order to make Cake. Making..."
 
 #: Cake/Cake.cpp:32
 msgid "Recieved order to cook Cake. Cooking..."
