@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <boost/Locale.hpp>
 #include "UITestApp.h"
 #include "..\CookingWithCPP\CookingWithCPP.h"
 
@@ -40,9 +41,9 @@ int main()
 
     // Read from standard input
     std::string ui_input;
-    std::cout << "Enter food to test\n" << "Options: [\"meatloaf\",\"cake\",\"asparagus\"]\n";
+    std::cout << boost::locale::translate("Enter food to test") << std::endl << "Options: [\"meatloaf\",\"cake\",\"asparagus\"]\n";
     std::getline(std::cin, ui_input);
-    std::cout << "\n";
+    std::cout << std::endl;
     
     if (ui_input == "meatloaf") {
         TestClass::test_meatloaf();

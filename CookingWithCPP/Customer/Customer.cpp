@@ -3,6 +3,7 @@
 
 #include "framework.h"
 
+#include <boost/Locale.hpp>
 #include <iostream>
 #include "Customer.h"
 
@@ -25,9 +26,9 @@ CCustomer::CCustomer()
 CUSTOMER_API Customer::Customer() {};
 
 void CUSTOMER_API Customer::order_food(std::string food_item) {
-    std::cout << "A customer is ordering " << food_item << ".\n";
+    std::cout << boost::locale::translate("A customer is ordering ") << food_item << ".\n";
 };
 
 void CUSTOMER_API Customer::pay_for_food(int food_price) {
-    std::cout << "A customer has paid " << food_price << " dollars.\n";
+    std::cout << boost::locale::translate("A customer has paid ") << food_price << " dollars.\n";
 };

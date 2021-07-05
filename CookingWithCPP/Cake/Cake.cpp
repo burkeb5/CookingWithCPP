@@ -3,11 +3,11 @@
 
 #include "framework.h"
 
+#include <boost/Locale.hpp>
 #include <iostream>
 #include <string>
 #include "..\Core\Core.h"
 #include "Cake.h"
-
 
 // This is an example of an exported variable
 CAKE_API int nCake=0;
@@ -25,10 +25,10 @@ CCake::CCake()
 }
 
 void Cake::make_cake() {
-    std::cout << "Recieved order to make Cake. Making...\n";
+    std::cout << boost::locale::translate("Recieved order to make Cake. Making...") << std::endl;
     Core::make("Cake");
 }
 void Cake::cook_cake() {
-    std::cout << "Recieved order to cook Cake. Cooking...\n";
+    std::cout << boost::locale::translate("Recieved order to cook Cake. Cooking...") << std::endl;
     Core::cook("Cake");
 }

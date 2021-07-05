@@ -2,12 +2,16 @@
 //
 
 #include <iostream>
+#include <boost/Locale.hpp>
 #include "CookingWithCPP.h"
 #include "..\Core\Core.h"
 
 #include "..\Asparagus\Asparagus.h"
 #include "..\Cake\Cake.h"
 #include "..\Meatloaf\Meatloaf.h"
+
+using namespace boost::locale;
+using namespace std;
 
 
 void breakfast_rush(RestaurantOwner* restaurant_owner) {
@@ -74,6 +78,18 @@ void dinner_rush(RestaurantOwner* restaurant_owner) {
 
 int main()
 {
+    generator gen;
+    gen.add_messages_path("C:\\Users\\Vic\\Documents\\code_uc\\soft_arch\\midterm\\CookingWithCPP\\CookingWithCPP\\translation");
+    gen.add_messages_domain("es");
+    // Create locale generator, swap appropriately 
+    locale::global(gen("es_ES.UTF - 8"));
+    cout << translate("Enter food to test") << std::endl;
+    //locale::global(gen("en_EN.UTF - 8"));
+
+    cout.imbue(locale());
+    // "" - the system default locale, set
+    // it globally
+
     RestaurantOwner local_restaurant_owner = RestaurantOwner();
 
     breakfast_rush(&local_restaurant_owner);
