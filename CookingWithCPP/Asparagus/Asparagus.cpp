@@ -3,6 +3,7 @@
 
 #include "framework.h"
 
+#include <boost/Locale.hpp>
 #include <iostream>
 #include <string>
 #include "..\Core\Core.h"
