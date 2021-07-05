@@ -9,6 +9,7 @@
 #include "..\Core\Core.h"
 #include "Asparagus.h"
 
+using namespace boost::locale;
 
 // This is an example of an exported variable
 ASPARAGUS_API int nAsparagus=0;
@@ -26,10 +27,10 @@ CAsparagus::CAsparagus()
 }
 
 void ASPARAGUS_API Asparagus::make_asparagus() {
-    std::cout << "Recieved order to make Asparagus. Making...\n";
-    Core::make("Asparagus");
+    std::cout << translate("Recieved order to make Asparagus. Making...") << std::endl;
+    Core::make(translate("Asparagus"));
 }
 void ASPARAGUS_API Asparagus::cook_asparagus() {
     std::cout << "Recieved order to cook Asparagus. Cooking...\n";
-    Core::cook("Asparagus");
+    Core::cook(translate("Asparagus"));
 }

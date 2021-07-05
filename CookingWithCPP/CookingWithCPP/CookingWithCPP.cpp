@@ -1,6 +1,7 @@
 // CookingWithCPP.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <boost/Locale.hpp>
 #include <iostream>
 #include "CookingWithCPP.h"
 #include "..\Core\Core.h"
@@ -8,6 +9,8 @@
 #include "..\Asparagus\Asparagus.h"
 #include "..\Cake\Cake.h"
 #include "..\Meatloaf\Meatloaf.h"
+
+using namespace boost::locale;
 
 
 void breakfast_rush(RestaurantOwner* restaurant_owner) {
@@ -74,6 +77,14 @@ void dinner_rush(RestaurantOwner* restaurant_owner) {
 
 int main()
 {
+    generator gen;
+    gen.add_messages_path(".");
+    gen.add_messages_domain("hello");
+    // Create locale generator 
+    std::locale::global(gen(""));
+    // "" - the system default locale, set
+    // it globally
+
     RestaurantOwner local_restaurant_owner = RestaurantOwner();
 
     breakfast_rush(&local_restaurant_owner);
