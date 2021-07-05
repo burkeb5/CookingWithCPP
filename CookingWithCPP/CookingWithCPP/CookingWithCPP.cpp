@@ -79,10 +79,10 @@ void dinner_rush(RestaurantOwner* restaurant_owner) {
 int main()
 {
     generator gen;
-    gen.add_messages_path("C:\\Users\\Vic\\Documents\\code_uc\\soft_arch\\midterm\\CookingWithCPP\\CookingWithCPP\\translation\\");
+    gen.add_messages_path("C:\\Users\\Vic\\Documents\\code_uc\\soft_arch\\midterm\\CookingWithCPP\\CookingWithCPP\\translation\\es");
     gen.add_messages_domain("hello");
     // Create locale generator, swap appropriately 
-    locale::global(gen("es.UTF-8"));
+    locale::global(gen("es_ES.UTF-8"));
     cout << translate("Enter food to test") << std::endl;
     //locale::global(gen("en_EN.UTF - 8"));
 
