@@ -21,8 +21,23 @@ extern ASPARAGUS_API int nAsparagus;
 
 ASPARAGUS_API int fnAsparagus(void);
 
+/**
+* <summary> Contains all static methods for actions that occur between ordering and serving a dish of asparagus.</summary>
+* The suggested implementation is for methods to rely on support from methods in [Core](@ref Core).
+* Note that all methods are static which means there is no need for a Asparagus() constructor.
+*/
 class ASPARAGUS_API Asparagus {
 public:
+
+	/**
+	* <summary> Makes/Prepares a dish of (uncooked) asparagus.</summary>
+	* Relies on the Core method [Core.make()](@ref Core.make()).
+	*/
 	static void make_asparagus();
+
+	/**
+	* <summary> Cooks a dish of asparagus and prepares it for serving.</summary>
+	* Relies on the Core method [Core.cook()](@ref Core.cook()).
+	*/
 	static void cook_asparagus();
 };

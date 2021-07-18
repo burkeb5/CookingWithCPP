@@ -21,8 +21,23 @@ extern MEATLOAF_API int nMeatloaf;
 
 MEATLOAF_API int fnMeatloaf(void);
 
+/**
+* <summary> Contains all static methods for actions that occur between ordering and serving a dish of meatloaf.</summary>
+* The suggested implementation is for methods to rely on support from methods in [Core](@ref Core).
+* Note that all methods are static which means there is no need for a Meatloaf() constructor.
+*/
 class MEATLOAF_API Meatloaf {
 public:
+
+	/**
+	* <summary> Makes/Prepares a dish of (uncooked) meatloaf.</summary>
+	* Relies on the Core method [Core.make()](@ref Core.make()).
+	*/
 	static void make_meatloaf();
+
+	/**
+	* <summary> Cooks a dish of meatloaf and prepares it for serving.</summary>
+	* Relies on the Core method [Core.cook()](@ref Core.cook()).
+	*/
 	static void cook_meatloaf();
 };

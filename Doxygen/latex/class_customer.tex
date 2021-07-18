@@ -1,0 +1,67 @@
+\hypertarget{class_customer}{}\doxysection{Customer Class Reference}
+\label{class_customer}\index{Customer@{Customer}}
+
+
+Contains actions that occur when a customer orders a dish from a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Customer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_customer_a5570d4366278a56489e20a5cc34de4c3}{Customer}} ()
+\begin{DoxyCompactList}\small\item\em A customer that likely would engage with a restaurant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_afe55d18099b79f59aacc52e3cee94424}{order\+\_\+food}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Requests and order of a particular a dish of food. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_a8fd9d1b07c0870827614305480c90821}{pay\+\_\+for\+\_\+food}} (int)
+\begin{DoxyCompactList}\small\item\em Pay a specified dollar amount for a particular food item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains actions that occur when a customer orders a dish from a restaurant. 
+
+Referenced by \mbox{\hyperlink{class_restaurant_owner}{Restaurant\+Owner}} with a high degree of integration. The suggested implementation is for the \mbox{\hyperlink{class_restaurant_owner}{Restaurant\+Owner}} to facilitate most of the interaction and the \mbox{\hyperlink{class_customer}{Customer}} instance to perform smaller tasks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_customer_a5570d4366278a56489e20a5cc34de4c3}\label{class_customer_a5570d4366278a56489e20a5cc34de4c3}} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}}
+{\footnotesize\ttfamily CUSTOMER\+\_\+\+API Customer\+::\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A customer that likely would engage with a restaurant. 
+
+Takes no input arguments. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_customer_afe55d18099b79f59aacc52e3cee94424}\label{class_customer_afe55d18099b79f59aacc52e3cee94424}} 
+\index{Customer@{Customer}!order\_food@{order\_food}}
+\index{order\_food@{order\_food}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{order\_food()}{order\_food()}}
+{\footnotesize\ttfamily void CUSTOMER\+\_\+\+API Customer\+::order\+\_\+food (\begin{DoxyParamCaption}\item[{std\+::string}]{food\+\_\+item }\end{DoxyParamCaption})}
+
+
+
+Requests and order of a particular a dish of food. 
+
+The food name is specified as a std\+::string arguement. This order may be satisfied by a \mbox{\hyperlink{class_restaurant_owner}{Restaurant\+Owner}}. There is no validation to ensure that a \mbox{\hyperlink{class_restaurant_owner}{Restaurant\+Owner}} will choose to satisfy this request or that they\textquotesingle{}re able to serve the particular requested food item or that. \mbox{\Hypertarget{class_customer_a8fd9d1b07c0870827614305480c90821}\label{class_customer_a8fd9d1b07c0870827614305480c90821}} 
+\index{Customer@{Customer}!pay\_for\_food@{pay\_for\_food}}
+\index{pay\_for\_food@{pay\_for\_food}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{pay\_for\_food()}{pay\_for\_food()}}
+{\footnotesize\ttfamily void CUSTOMER\+\_\+\+API Customer\+::pay\+\_\+for\+\_\+food (\begin{DoxyParamCaption}\item[{int}]{food\+\_\+price }\end{DoxyParamCaption})}
+
+
+
+Pay a specified dollar amount for a particular food item. 
+
+The dollar amount is specified as a int arguement. It is suggested that a \mbox{\hyperlink{class_restaurant_owner}{Restaurant\+Owner}} will tracking this payment and add an equivalent dollar amount to their total sales (if desired). There is no validation to ensure that a \mbox{\hyperlink{class_restaurant_owner}{Restaurant\+Owner}} will track this payment. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Customer/Customer.\+h\item 
+Customer/Customer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{class_restaurant_owner}{}\doxysection{Restaurant\+Owner Class Reference}
+\label{class_restaurant_owner}\index{RestaurantOwner@{RestaurantOwner}}
+
+
+Contains all methods for actions that occur by the owner of a restaurant for smooth operation.  
+
+
+
+
+{\ttfamily \#include $<$Restaurant\+Owner.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_restaurant_owner_a916e81c92f6b3d19daebeb158ff84981}{Restaurant\+Owner}} ()
+\begin{DoxyCompactList}\small\item\em Owner of a restaurant participating in general restaurant operations and upkeep. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_restaurant_owner_a3db8c002eb36b667aeee9c703edc8f3c}{cleanup\+\_\+tables}} ()
+\begin{DoxyCompactList}\small\item\em Clean a total of dirty tables equal to the number that the owner is tracking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_restaurant_owner_a2cb2c5b21857e917ee3ab5f3d814d535}{sell\+\_\+meatloaf}} (\mbox{\hyperlink{class_customer}{Customer}})
+\begin{DoxyCompactList}\small\item\em Sell a dish of meatloaf to a specified customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_restaurant_owner_a62f871ca1087b63602043e3b6b735607}{sell\+\_\+cake}} (\mbox{\hyperlink{class_customer}{Customer}})
+\begin{DoxyCompactList}\small\item\em Sell a cake to a specified customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_restaurant_owner_abe62b6e2bfc7975ca1743f0bc7d405d3}{sell\+\_\+asparagus}} (\mbox{\hyperlink{class_customer}{Customer}})
+\begin{DoxyCompactList}\small\item\em Sell a dish of asparagus to a specified customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_restaurant_owner_a10981d18271981129a1d864b5d74254b}{get\+\_\+total\+\_\+sales}} ()
+\begin{DoxyCompactList}\small\item\em Get the total sales amount that the owner is tracking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}{dirty\+\_\+tables}}
+\begin{DoxyCompactList}\small\item\em The total number of tables that the owner is tracking as dirty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}{total\+\_\+sales}}
+\begin{DoxyCompactList}\small\item\em The total profit that an owner has recieved from customers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains all methods for actions that occur by the owner of a restaurant for smooth operation. 
+
+References \mbox{\hyperlink{class_customer}{Customer}} with a high degree of integration. The suggested implementation is to facilitate most of the interaction with a \mbox{\hyperlink{class_customer}{Customer}} instance. Contains additional (standalone) methods for general restaurant upkeep. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_restaurant_owner_a916e81c92f6b3d19daebeb158ff84981}\label{class_restaurant_owner_a916e81c92f6b3d19daebeb158ff84981}} 
+\index{RestaurantOwner@{RestaurantOwner}!RestaurantOwner@{RestaurantOwner}}
+\index{RestaurantOwner@{RestaurantOwner}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{RestaurantOwner()}{RestaurantOwner()}}
+{\footnotesize\ttfamily RESTAURANTOWNER\+\_\+\+API Restaurant\+Owner\+::\+Restaurant\+Owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Owner of a restaurant participating in general restaurant operations and upkeep. 
+
+Takes no input arguments. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_restaurant_owner_a3db8c002eb36b667aeee9c703edc8f3c}\label{class_restaurant_owner_a3db8c002eb36b667aeee9c703edc8f3c}} 
+\index{RestaurantOwner@{RestaurantOwner}!cleanup\_tables@{cleanup\_tables}}
+\index{cleanup\_tables@{cleanup\_tables}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{cleanup\_tables()}{cleanup\_tables()}}
+{\footnotesize\ttfamily void RESTAURANTOWNER\+\_\+\+API Restaurant\+Owner\+::cleanup\+\_\+tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clean a total of dirty tables equal to the number that the owner is tracking. 
+
+Determines the number of dirty tables from \mbox{\hyperlink{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}{Restaurant\+Owner.dirty\+\_\+tables}}. \mbox{\Hypertarget{class_restaurant_owner_a10981d18271981129a1d864b5d74254b}\label{class_restaurant_owner_a10981d18271981129a1d864b5d74254b}} 
+\index{RestaurantOwner@{RestaurantOwner}!get\_total\_sales@{get\_total\_sales}}
+\index{get\_total\_sales@{get\_total\_sales}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{get\_total\_sales()}{get\_total\_sales()}}
+{\footnotesize\ttfamily void RESTAURANTOWNER\+\_\+\+API Restaurant\+Owner\+::get\+\_\+total\+\_\+sales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the total sales amount that the owner is tracking. 
+
+Determines the number of total sales from \mbox{\hyperlink{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}{Restaurant\+Owner.total\+\_\+sales}}. \mbox{\Hypertarget{class_restaurant_owner_abe62b6e2bfc7975ca1743f0bc7d405d3}\label{class_restaurant_owner_abe62b6e2bfc7975ca1743f0bc7d405d3}} 
+\index{RestaurantOwner@{RestaurantOwner}!sell\_asparagus@{sell\_asparagus}}
+\index{sell\_asparagus@{sell\_asparagus}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{sell\_asparagus()}{sell\_asparagus()}}
+{\footnotesize\ttfamily void RESTAURANTOWNER\+\_\+\+API Restaurant\+Owner\+::sell\+\_\+asparagus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Sell a dish of asparagus to a specified customer. 
+
+This method takes a \mbox{\hyperlink{class_customer}{Customer}} instance as an argument to keep track of the customer that has ordered the meal. Suggested implementation has the owner keep track of when this method is called and update \mbox{\hyperlink{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}{Restaurant\+Owner.dirty\+\_\+tables}} and \mbox{\hyperlink{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}{Restaurant\+Owner.total\+\_\+sales}} in response. \mbox{\Hypertarget{class_restaurant_owner_a62f871ca1087b63602043e3b6b735607}\label{class_restaurant_owner_a62f871ca1087b63602043e3b6b735607}} 
+\index{RestaurantOwner@{RestaurantOwner}!sell\_cake@{sell\_cake}}
+\index{sell\_cake@{sell\_cake}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{sell\_cake()}{sell\_cake()}}
+{\footnotesize\ttfamily void RESTAURANTOWNER\+\_\+\+API Restaurant\+Owner\+::sell\+\_\+cake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Sell a cake to a specified customer. 
+
+This method takes a \mbox{\hyperlink{class_customer}{Customer}} instance as an argument to keep track of the customer that has ordered the meal. Suggested implementation has the owner keep track of when this method is called and update \mbox{\hyperlink{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}{Restaurant\+Owner.dirty\+\_\+tables}} and \mbox{\hyperlink{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}{Restaurant\+Owner.total\+\_\+sales}} in response. \mbox{\Hypertarget{class_restaurant_owner_a2cb2c5b21857e917ee3ab5f3d814d535}\label{class_restaurant_owner_a2cb2c5b21857e917ee3ab5f3d814d535}} 
+\index{RestaurantOwner@{RestaurantOwner}!sell\_meatloaf@{sell\_meatloaf}}
+\index{sell\_meatloaf@{sell\_meatloaf}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{sell\_meatloaf()}{sell\_meatloaf()}}
+{\footnotesize\ttfamily void RESTAURANTOWNER\+\_\+\+API Restaurant\+Owner\+::sell\+\_\+meatloaf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Sell a dish of meatloaf to a specified customer. 
+
+This method takes a \mbox{\hyperlink{class_customer}{Customer}} instance as an argument to keep track of the customer that has ordered the meal. Suggested implementation has the owner keep track of when this method is called and update \mbox{\hyperlink{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}{Restaurant\+Owner.dirty\+\_\+tables}} and \mbox{\hyperlink{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}{Restaurant\+Owner.total\+\_\+sales}} in response. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}\label{class_restaurant_owner_a8386e659eaf05ea6247edca1a0b66506}} 
+\index{RestaurantOwner@{RestaurantOwner}!dirty\_tables@{dirty\_tables}}
+\index{dirty\_tables@{dirty\_tables}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{dirty\_tables}{dirty\_tables}}
+{\footnotesize\ttfamily int Restaurant\+Owner\+::dirty\+\_\+tables}
+
+
+
+The total number of tables that the owner is tracking as dirty. 
+
+Suggested implentation involves incrementing this value after selling a food item to a \mbox{\hyperlink{class_customer}{Customer}}. Additonally, suggested implementation would be that this value never falls below 0, but this method will do nothing in the event this happens. \mbox{\Hypertarget{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}\label{class_restaurant_owner_ae2d07b8a518c95e1dfe93b5fb1043274}} 
+\index{RestaurantOwner@{RestaurantOwner}!total\_sales@{total\_sales}}
+\index{total\_sales@{total\_sales}!RestaurantOwner@{RestaurantOwner}}
+\doxysubsubsection{\texorpdfstring{total\_sales}{total\_sales}}
+{\footnotesize\ttfamily int Restaurant\+Owner\+::total\+\_\+sales}
+
+
+
+The total profit that an owner has recieved from customers. 
+
+There is no suggested implementation for resetting this value, and it can be used to track daily, weekly, monthy, etc total sales depending on need. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Restaurant\+Owner/Restaurant\+Owner.\+h\item 
+Restaurant\+Owner/Restaurant\+Owner.\+cpp\end{DoxyCompactItemize}

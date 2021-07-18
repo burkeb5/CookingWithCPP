@@ -21,8 +21,23 @@ extern CAKE_API int nCake;
 
 CAKE_API int fnCake(void);
 
+/**
+* <summary> Contains all static methods for actions that occur between ordering and serving a cake.</summary>
+* The suggested implementation is for methods to rely on support from methods in [Core](@ref Core).
+* Note that all methods are static which means there is no need for a Cake() constructor.
+*/
 class CAKE_API Cake {
 public:
+
+	/**
+	* <summary> Makes/Prepares an (uncooked) cake.</summary>
+	* Relies on the Core method [Core.make()](@ref Core.make()).
+	*/
 	static void make_cake();
+
+	/**
+	* <summary> Cooks a cake and prepares it for serving.</summary>
+	* Relies on the Core method [Core.cook()](@ref Core.cook()).
+	*/
 	static void cook_cake();
 };
