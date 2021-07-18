@@ -19,6 +19,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RestaurantOwner", "Restaura
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UITestApp", "UITestApp\UITestApp.vcxproj", "{B717FBAB-1387-4664-8C37-4F6CBF012FB1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RestaurantObserver", "RestaurantObserver\RestaurantObserver.vcxproj", "{653D5E17-C882-4461-BECE-9E4786680AA2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RestaurantBuilder", "RestaurantBuilder\RestaurantBuilder.vcxproj", "{B235E248-2875-4339-84CA-02657FEC4668}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +95,22 @@ Global
 		{B717FBAB-1387-4664-8C37-4F6CBF012FB1}.Release|x64.Build.0 = Release|x64
 		{B717FBAB-1387-4664-8C37-4F6CBF012FB1}.Release|x86.ActiveCfg = Release|Win32
 		{B717FBAB-1387-4664-8C37-4F6CBF012FB1}.Release|x86.Build.0 = Release|Win32
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Debug|x64.ActiveCfg = Debug|x64
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Debug|x64.Build.0 = Debug|x64
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Debug|x86.ActiveCfg = Debug|Win32
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Debug|x86.Build.0 = Debug|Win32
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Release|x64.ActiveCfg = Release|x64
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Release|x64.Build.0 = Release|x64
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Release|x86.ActiveCfg = Release|Win32
+		{653D5E17-C882-4461-BECE-9E4786680AA2}.Release|x86.Build.0 = Release|Win32
+		{B235E248-2875-4339-84CA-02657FEC4668}.Debug|x64.ActiveCfg = Debug|x64
+		{B235E248-2875-4339-84CA-02657FEC4668}.Debug|x64.Build.0 = Debug|x64
+		{B235E248-2875-4339-84CA-02657FEC4668}.Debug|x86.ActiveCfg = Debug|Win32
+		{B235E248-2875-4339-84CA-02657FEC4668}.Debug|x86.Build.0 = Debug|Win32
+		{B235E248-2875-4339-84CA-02657FEC4668}.Release|x64.ActiveCfg = Release|x64
+		{B235E248-2875-4339-84CA-02657FEC4668}.Release|x64.Build.0 = Release|x64
+		{B235E248-2875-4339-84CA-02657FEC4668}.Release|x86.ActiveCfg = Release|Win32
+		{B235E248-2875-4339-84CA-02657FEC4668}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

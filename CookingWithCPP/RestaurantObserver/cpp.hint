@@ -1,0 +1,2 @@
+#define RESTAURANTOBSERVER_API __declspec(dllexport)
+#define RESTAURANTOBSERVER_API __declspec(dllimport)
