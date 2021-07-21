@@ -23,19 +23,54 @@ RESTAURANTOBSERVER_API int fnRestaurantObserver(void);
 
 #include <string>
 #include "IObserver.h"
+/**
+* <summary> Observer class for Restaurants.</summary>
+*
+* The suggested implementation is for methods to rely on support from methods in [Core](@ref Core).
+* Inherits from the IObserver class.
+*/
 class RESTAURANTOBSERVER_API RestaurantObserver : public IObserver
 {
 	public:
-		RestaurantObserver(EventTypes entryTypes);
+		/**
+		* <summary> Creates a new RestaurantObserver.</summary>
+		*
+		* The RestaurantObserver is configured to key off of the given EventType entryTypes.
+		* To configure this RestaurantObserver to key off of another type, the UpdateOnEventType() method is available.
+		*/
+		RestaurantObserver(EventType entryTypes);
 		virtual ~RestaurantObserver();
+
+		/**
+		* <summary> Update method for a RestaurantObserver.</summary>
+		*
+		* Keys off of the EventType specified at creation of this object.
+		* Whenever a subject issues a linked-up Notify() call, this method is executed. The message and time are logged.
+		*/
 		void Update(const std::string& message_from_subject) override;
+
+		/**
+		* <summary> Removes this observer from all linked subjects and "unsubscribes" to all events.</summary>
+		*/
 		void RemoveMeFromTheList();
+
+		/**
+		* <summary> Prints Info about this Observer including configuration links and a log of past updates.</summary>
+		*
+		* Sends output to STDOUT. 
+		*/
 		void PrintInfo();
-		bool UpdateOnEventType(EventTypes entryTypes);
+
+		/**
+		* <summary> Update method for a RestaurantObserver that acts for specific EventType not specified for this RestaurantObserver.</summary>
+		*
+		* Whenever a subject issues a linked-up Notify() call, this method is executed. This only applies for the given EventType.
+		*/
+		bool UpdateOnEventType(EventType entryTypes);
 
 	private:
 		std::string message_from_subject_;
 		static int static_number_;
 		int number_;
-		EventTypes m_eventType;
+		EventType m_eventType;
 };

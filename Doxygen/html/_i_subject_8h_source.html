@@ -88,16 +88,24 @@ $(document).ready(function(){initNavTree('_i_subject_8h_source.html',''); initRe
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IObserver.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>IObserver</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;class RESTAURANTOBSERVER_API ISubject {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">virtual</span> ~ISubject() {};</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Attach(IObserver* observer) = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Detach(IObserver* observer) = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Notify() = 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Notify(IObserver::EventTypes eventType) = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="namespace_i_subject.html">    4</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="class_i_observer.html">IObserver</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;class RESTAURANTOBSERVER_API <a class="code" href="namespace_i_subject.html">ISubject</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="namespace_i_subject.html">ISubject</a>() {};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespace_i_subject.html#ae5eab66fa44f227aaafd9aee56018fe8">   19</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespace_i_subject.html#ae5eab66fa44f227aaafd9aee56018fe8">Attach</a>(<a class="code" href="class_i_observer.html">IObserver</a>* observer) = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespace_i_subject.html#a2839e9b5ad3cdd6e73081272def58e27">   26</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespace_i_subject.html#a2839e9b5ad3cdd6e73081272def58e27">Detach</a>(<a class="code" href="class_i_observer.html">IObserver</a>* observer) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespace_i_subject.html#a719fcebc1bb7d0a7e83c52a58c24a75d">   31</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespace_i_subject.html#a719fcebc1bb7d0a7e83c52a58c24a75d">Notify</a>() = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespace_i_subject.html#a66256cf4f619f4e9db6411fffab5f50b">   36</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespace_i_subject.html#a719fcebc1bb7d0a7e83c52a58c24a75d">Notify</a>(IObserver::EventTypes eventType) = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdoc">Class that all other Observers inherit.</div><div class="ttdef"><b>Definition:</b> IObserver.h:9</div></div>
+<div class="ttc" id="anamespace_i_subject_html"><div class="ttname"><a href="namespace_i_subject.html">ISubject</a></div><div class="ttdoc">Class that all other Subjects inherit.</div><div class="ttdef"><b>Definition:</b> ISubject.h:10</div></div>
+<div class="ttc" id="anamespace_i_subject_html_a2839e9b5ad3cdd6e73081272def58e27"><div class="ttname"><a href="namespace_i_subject.html#a2839e9b5ad3cdd6e73081272def58e27">ISubject::Detach</a></div><div class="ttdeci">virtual void Detach(IObserver *observer)=0</div><div class="ttdoc">Detaches a given subject from a given observer.</div></div>
+<div class="ttc" id="anamespace_i_subject_html_a719fcebc1bb7d0a7e83c52a58c24a75d"><div class="ttname"><a href="namespace_i_subject.html#a719fcebc1bb7d0a7e83c52a58c24a75d">ISubject::Notify</a></div><div class="ttdeci">virtual void Notify()=0</div><div class="ttdoc">Notifies all attached observers for this subject generically.</div></div>
+<div class="ttc" id="anamespace_i_subject_html_ae5eab66fa44f227aaafd9aee56018fe8"><div class="ttname"><a href="namespace_i_subject.html#ae5eab66fa44f227aaafd9aee56018fe8">ISubject::Attach</a></div><div class="ttdeci">virtual void Attach(IObserver *observer)=0</div><div class="ttdoc">Attaches a given subject to a given observer.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

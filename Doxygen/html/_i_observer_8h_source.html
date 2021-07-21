@@ -88,18 +88,24 @@ $(document).ready(function(){initNavTree('_i_observer_8h_source.html',''); initR
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span>RESTAURANTOBSERVER_API IObserver {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">enum</span> EventTypes</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        Investor,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        IngredientSupplier,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        HealthInspector</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    };</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> ~IObserver() {};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Update(<span class="keyword">const</span> std::string&amp; message_from_subject) = 0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_i_observer.html">    9</a></span>&#160;<span class="keyword">class </span>RESTAURANTOBSERVER_API <a class="code" href="class_i_observer.html">IObserver</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">   14</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">EventType</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea29b130db327f41d09ca38648bd673e50">   16</a></span>&#160;        <a class="code" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea29b130db327f41d09ca38648bd673e50">Investor</a>,               </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea26ee693e1819ae00e1be045e16b6cec4">   17</a></span>&#160;        <a class="code" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea26ee693e1819ae00e1be045e16b6cec4">IngredientSupplier</a>,     </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        HealthInspector         </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea1a618c3af267adcbc12e7a8c190fd85d">   19</a></span>&#160;    };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_i_observer.html">IObserver</a>() {};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_i_observer.html#a21ef849967349b8984544242f756cba9">   26</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_observer.html#a21ef849967349b8984544242f756cba9">Update</a>(<span class="keyword">const</span> std::string&amp; message_from_subject) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdoc">Class that all other Observers inherit.</div><div class="ttdef"><b>Definition:</b> IObserver.h:9</div></div>
+<div class="ttc" id="aclass_i_observer_html_a21ef849967349b8984544242f756cba9"><div class="ttname"><a href="class_i_observer.html#a21ef849967349b8984544242f756cba9">IObserver::Update</a></div><div class="ttdeci">virtual void Update(const std::string &amp;message_from_subject)=0</div><div class="ttdoc">Placeholder update method for all inherited Observers.</div></div>
+<div class="ttc" id="aclass_i_observer_html_aca2bb6bff1720d8fdcbd570a7afa53fe"><div class="ttname"><a href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">IObserver::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdoc">Represents types of Observable events available.</div><div class="ttdef"><b>Definition:</b> IObserver.h:15</div></div>
+<div class="ttc" id="aclass_i_observer_html_aca2bb6bff1720d8fdcbd570a7afa53fea26ee693e1819ae00e1be045e16b6cec4"><div class="ttname"><a href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea26ee693e1819ae00e1be045e16b6cec4">IObserver::IngredientSupplier</a></div><div class="ttdeci">@ IngredientSupplier</div><div class="ttdef"><b>Definition:</b> IObserver.h:17</div></div>
+<div class="ttc" id="aclass_i_observer_html_aca2bb6bff1720d8fdcbd570a7afa53fea29b130db327f41d09ca38648bd673e50"><div class="ttname"><a href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea29b130db327f41d09ca38648bd673e50">IObserver::Investor</a></div><div class="ttdeci">@ Investor</div><div class="ttdef"><b>Definition:</b> IObserver.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -21,13 +21,13 @@ public:
 	};
 
 	/**
-	* <summary> Sets the Order Type for this FoodOrderBuilder.</summary>
+	* <summary> Sets the OrderType for this FoodOrderBuilder.</summary>
 	* 
 	*/
 	void SetType(OrderType type);
 
 	/**
-	* <summary> Returns the current Order Type for this FoodOrderBuilder.</summary>
+	* <summary> Returns the current OrderType for this FoodOrderBuilder.</summary>
 	*/
 	OrderType GetType();
 
@@ -44,7 +44,7 @@ public:
 	void order(std::string foodname);
 
 	/**
-	* <summary> Returns the unique ID for this FoodOrderBuilder.</summary>
+	* <summary> Returns the int unique ID for this FoodOrderBuilder.</summary>
 	*/
 	int getUniqueID() override;
 };

@@ -110,22 +110,34 @@ $(document).ready(function(){initNavTree('_restaurant_observer_8h_source.html','
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;IObserver.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>RESTAURANTOBSERVER_API RestaurantObserver : <span class="keyword">public</span> IObserver</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        RestaurantObserver(EventTypes entryTypes);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> ~RestaurantObserver();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> Update(<span class="keyword">const</span> std::string&amp; message_from_subject) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> RemoveMeFromTheList();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> PrintInfo();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">bool</span> UpdateOnEventType(EventTypes entryTypes);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::string message_from_subject_;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> static_number_;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">int</span> number_;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        EventTypes m_eventType;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_restaurant_observer.html">   32</a></span>&#160;<span class="keyword">class </span>RESTAURANTOBSERVER_API <a class="code" href="class_restaurant_observer.html">RestaurantObserver</a> : <span class="keyword">public</span> <a class="code" href="class_i_observer.html">IObserver</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_restaurant_observer.html#a541dace14f427af144cdef7ca465a564">   41</a></span>&#160;        <a class="code" href="class_restaurant_observer.html#a541dace14f427af144cdef7ca465a564">RestaurantObserver</a>(<a class="code" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">EventType</a> entryTypes);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_restaurant_observer.html">RestaurantObserver</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_restaurant_observer.html#a24c4962bf0efb9c8892ddf526dce2b47">   50</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_restaurant_observer.html#a24c4962bf0efb9c8892ddf526dce2b47">Update</a>(<span class="keyword">const</span> std::string&amp; message_from_subject) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_restaurant_observer.html#a22526a5cbcb0cd9fe7a91b88a3186084">   55</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_restaurant_observer.html#a22526a5cbcb0cd9fe7a91b88a3186084">RemoveMeFromTheList</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_restaurant_observer.html#a9d26fd667248bc568d4241228cb914d8">   62</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_restaurant_observer.html#a9d26fd667248bc568d4241228cb914d8">PrintInfo</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_restaurant_observer.html#a6a1bdbb5ef3e7457f1b3235f4a90afd0">   69</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_restaurant_observer.html#a6a1bdbb5ef3e7457f1b3235f4a90afd0">UpdateOnEventType</a>(<a class="code" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">EventType</a> entryTypes);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::string message_from_subject_;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> static_number_;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">int</span> number_;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">EventType</a> m_eventType;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdoc">Class that all other Observers inherit.</div><div class="ttdef"><b>Definition:</b> IObserver.h:9</div></div>
+<div class="ttc" id="aclass_i_observer_html_aca2bb6bff1720d8fdcbd570a7afa53fe"><div class="ttname"><a href="class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fe">IObserver::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdoc">Represents types of Observable events available.</div><div class="ttdef"><b>Definition:</b> IObserver.h:15</div></div>
+<div class="ttc" id="aclass_restaurant_observer_html"><div class="ttname"><a href="class_restaurant_observer.html">RestaurantObserver</a></div><div class="ttdoc">Observer class for Restaurants.</div><div class="ttdef"><b>Definition:</b> RestaurantObserver.h:33</div></div>
+<div class="ttc" id="aclass_restaurant_observer_html_a22526a5cbcb0cd9fe7a91b88a3186084"><div class="ttname"><a href="class_restaurant_observer.html#a22526a5cbcb0cd9fe7a91b88a3186084">RestaurantObserver::RemoveMeFromTheList</a></div><div class="ttdeci">void RemoveMeFromTheList()</div><div class="ttdoc">Removes this observer from all linked subjects and &quot;unsubscribes&quot; to all events.</div></div>
+<div class="ttc" id="aclass_restaurant_observer_html_a24c4962bf0efb9c8892ddf526dce2b47"><div class="ttname"><a href="class_restaurant_observer.html#a24c4962bf0efb9c8892ddf526dce2b47">RestaurantObserver::Update</a></div><div class="ttdeci">void Update(const std::string &amp;message_from_subject) override</div><div class="ttdoc">Update method for a RestaurantObserver.</div></div>
+<div class="ttc" id="aclass_restaurant_observer_html_a541dace14f427af144cdef7ca465a564"><div class="ttname"><a href="class_restaurant_observer.html#a541dace14f427af144cdef7ca465a564">RestaurantObserver::RestaurantObserver</a></div><div class="ttdeci">RestaurantObserver(EventType entryTypes)</div><div class="ttdoc">Creates a new RestaurantObserver.</div></div>
+<div class="ttc" id="aclass_restaurant_observer_html_a6a1bdbb5ef3e7457f1b3235f4a90afd0"><div class="ttname"><a href="class_restaurant_observer.html#a6a1bdbb5ef3e7457f1b3235f4a90afd0">RestaurantObserver::UpdateOnEventType</a></div><div class="ttdeci">bool UpdateOnEventType(EventType entryTypes)</div><div class="ttdoc">Update method for a RestaurantObserver that acts for specific EventType not specified for this Restau...</div></div>
+<div class="ttc" id="aclass_restaurant_observer_html_a9d26fd667248bc568d4241228cb914d8"><div class="ttname"><a href="class_restaurant_observer.html#a9d26fd667248bc568d4241228cb914d8">RestaurantObserver::PrintInfo</a></div><div class="ttdeci">void PrintInfo()</div><div class="ttdoc">Prints Info about this Observer including configuration links and a log of past updates.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

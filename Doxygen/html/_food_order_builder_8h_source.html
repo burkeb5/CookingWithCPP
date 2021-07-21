@@ -90,23 +90,34 @@ $(document).ready(function(){initNavTree('_food_order_builder_8h_source.html',''
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;IBuilder.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>RESTAURANTBUILDER_API FoodOrderBuilder : <span class="keyword">public</span> IBuilder</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">enum</span> OrderTypes</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        PriceFoodOrder,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        FoodNameOrder</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> SetType(OrderTypes type);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    OrderTypes GetType();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> order(<span class="keywordtype">int</span> budget);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> order(std::string foodname);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> getUniqueID() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_food_order_builder.html">   11</a></span>&#160;<span class="keyword">class </span>RESTAURANTBUILDER_API <a class="code" href="class_food_order_builder.html">FoodOrderBuilder</a> : <span class="keyword">public</span> <a class="code" href="class_i_builder.html">IBuilder</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9e">   17</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9e">OrderType</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9ea65b29b23092dec6848ba1cf6edd8b54a">   19</a></span>&#160;        <a class="code" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9ea65b29b23092dec6848ba1cf6edd8b54a">PriceFoodOrder</a>,     </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        FoodNameOrder       </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9ead71b27571bec73b9e03946ed43063686">   21</a></span>&#160;    };</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#aaea6ed7c17560c33cfdba0b41f4da4df">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_food_order_builder.html#aaea6ed7c17560c33cfdba0b41f4da4df">SetType</a>(<a class="code" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9e">OrderType</a> type);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#ad2f9a66b4756f680d11cf63011577310">   32</a></span>&#160;    <a class="code" href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9e">OrderType</a> <a class="code" href="class_food_order_builder.html#ad2f9a66b4756f680d11cf63011577310">GetType</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#a48dfc826759f4be47ac10ea30d5f7619">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_food_order_builder.html#a48dfc826759f4be47ac10ea30d5f7619">order</a>(<span class="keywordtype">int</span> budget);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#a65323f2b70dc0986f801c841439b39d8">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_food_order_builder.html#a65323f2b70dc0986f801c841439b39d8">order</a>(std::string foodname);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_food_order_builder.html#a250da9cf07e99c627e88395811848764">   49</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_food_order_builder.html#a250da9cf07e99c627e88395811848764">getUniqueID</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="ttc" id="aclass_food_order_builder_html"><div class="ttname"><a href="class_food_order_builder.html">FoodOrderBuilder</a></div><div class="ttdoc">Builder class that generates new orders. Creates orders based on a set type which needs be set.</div><div class="ttdef"><b>Definition:</b> FoodOrderBuilder.h:12</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_a250da9cf07e99c627e88395811848764"><div class="ttname"><a href="class_food_order_builder.html#a250da9cf07e99c627e88395811848764">FoodOrderBuilder::getUniqueID</a></div><div class="ttdeci">int getUniqueID() override</div><div class="ttdoc">Returns the int unique ID for this FoodOrderBuilder.</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_a48dfc826759f4be47ac10ea30d5f7619"><div class="ttname"><a href="class_food_order_builder.html#a48dfc826759f4be47ac10ea30d5f7619">FoodOrderBuilder::order</a></div><div class="ttdeci">void order(int budget)</div><div class="ttdoc">Generates a new order based-on maximizing the provided budget.</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_a65323f2b70dc0986f801c841439b39d8"><div class="ttname"><a href="class_food_order_builder.html#a65323f2b70dc0986f801c841439b39d8">FoodOrderBuilder::order</a></div><div class="ttdeci">void order(std::string foodname)</div><div class="ttdoc">Generates a new minimal food order with the provided foodname.</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_aaea6ed7c17560c33cfdba0b41f4da4df"><div class="ttname"><a href="class_food_order_builder.html#aaea6ed7c17560c33cfdba0b41f4da4df">FoodOrderBuilder::SetType</a></div><div class="ttdeci">void SetType(OrderType type)</div><div class="ttdoc">Sets the OrderType for this FoodOrderBuilder.</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_ad2f9a66b4756f680d11cf63011577310"><div class="ttname"><a href="class_food_order_builder.html#ad2f9a66b4756f680d11cf63011577310">FoodOrderBuilder::GetType</a></div><div class="ttdeci">OrderType GetType()</div><div class="ttdoc">Returns the current OrderType for this FoodOrderBuilder.</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_adabef4365e96502badc4ba02011c4e9e"><div class="ttname"><a href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9e">FoodOrderBuilder::OrderType</a></div><div class="ttdeci">OrderType</div><div class="ttdoc">Represents types of orders available.</div><div class="ttdef"><b>Definition:</b> FoodOrderBuilder.h:18</div></div>
+<div class="ttc" id="aclass_food_order_builder_html_adabef4365e96502badc4ba02011c4e9ea65b29b23092dec6848ba1cf6edd8b54a"><div class="ttname"><a href="class_food_order_builder.html#adabef4365e96502badc4ba02011c4e9ea65b29b23092dec6848ba1cf6edd8b54a">FoodOrderBuilder::PriceFoodOrder</a></div><div class="ttdeci">@ PriceFoodOrder</div><div class="ttdef"><b>Definition:</b> FoodOrderBuilder.h:19</div></div>
+<div class="ttc" id="aclass_i_builder_html"><div class="ttname"><a href="class_i_builder.html">IBuilder</a></div><div class="ttdoc">Class that all other Builders inherit.</div><div class="ttdef"><b>Definition:</b> IBuilder.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

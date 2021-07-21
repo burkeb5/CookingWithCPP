@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['order_5ffood_40',['order_food',['../class_customer.html#afe55d18099b79f59aacc52e3cee94424',1,'Customer']]]
+  ['get_5ftotal_5fsales_65',['get_total_sales',['../class_restaurant_owner.html#a10981d18271981129a1d864b5d74254b',1,'RestaurantOwner']]],
+  ['gettype_66',['GetType',['../class_food_order_builder.html#ad2f9a66b4756f680d11cf63011577310',1,'FoodOrderBuilder']]],
+  ['getuniqueid_67',['getUniqueID',['../class_food_order_builder.html#a250da9cf07e99c627e88395811848764',1,'FoodOrderBuilder::getUniqueID()'],['../class_i_builder.html#a12f2453e1b51825aa9679d2e7225b9f7',1,'IBuilder::getUniqueID()']]]
 ];

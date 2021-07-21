@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pay_5ffor_5ffood_17',['pay_for_food',['../class_customer.html#a8fd9d1b07c0870827614305480c90821',1,'Customer']]]
+  ['healthinspector_18',['HealthInspector',['../class_i_observer.html#aca2bb6bff1720d8fdcbd570a7afa53fea1a618c3af267adcbc12e7a8c190fd85d',1,'IObserver']]]
 ];
