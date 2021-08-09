@@ -167,6 +167,9 @@
     <ProjectReference Include="..\Customer\Customer.vcxproj">
       <Project>{cea42ad3-a09c-47dc-82f0-506ecdf16772}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\FoodOrder\FoodOrder.vcxproj">
+      <Project>{c13c9e45-2db3-4f58-ac1a-73427b4b0036}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\Meatloaf\Meatloaf.vcxproj">
       <Project>{b14538e5-44e8-49a3-8ced-de394513fbda}</Project>
     </ProjectReference>

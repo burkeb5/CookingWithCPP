@@ -30,6 +30,7 @@ The suggested implementation is for the [RestaurantOwner](@ref RestaurantOwner) 
 */
 class CUSTOMER_API Customer {
 public:
+
 	/**
 	* <summary> A customer that likely would engage with a restaurant.</summary>
 	* Takes no input arguments.
@@ -51,4 +52,18 @@ public:
 	* There is no validation to ensure that a [RestaurantOwner](@ref RestaurantOwner) will track this payment.
 	*/
 	void pay_for_food(int);
+
+	std::string food_name;
+	int budget;
+	int max_patience;
+
+	std::string getFoodName();
+	void setFoodName(std::string);
+
+	int getBudget();
+	void setBudget(int);
+
+	int getMaxPatience();
+	void setMaxPatience(int);
+
 };

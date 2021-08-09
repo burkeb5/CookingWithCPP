@@ -23,6 +23,7 @@ RESTAURANTOWNER_API int fnRestaurantOwner(void);
 
 #include <string>
 #include "..\Customer\Customer.h"
+#include "..\FoodOrder\FoodOrder.h"
 
 /**
 * <summary> Contains all methods for actions that occur by the owner of a restaurant for smooth operation.</summary>
@@ -85,4 +86,14 @@ public:
 	* Determines the number of total sales from [RestaurantOwner.total_sales](@ref RestaurantOwner.total_sales).
 	*/
 	void get_total_sales();
+
+	/**
+	* <summary> Sell a generic dish of a foodtype to a specified customer. </summary>
+	* This method takes a [Customer](@ref Customer) instance as an argument to keep track of the customer that has ordered the meal.
+	* The generic dish must be known food type for the RestaurantOwner to know how to prepare it.
+	* The customer must have enough budget to pay for the food and enough patience to wait for the food to be prepared.
+	* The customer's atrributes are used to construct a [FoodOrder](@ref FoodOrder) object to return that will specify whether the order should be filled or not.
+	*/
+	FoodOrder sell_generic_food(Customer);
+
 };

@@ -1,6 +1,8 @@
 // CookingWithCPP.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#pragma once
+
 #include <iostream>
 #include "CookingWithCPP.h"
 #include "..\Core\Core.h"
@@ -71,6 +73,30 @@ void dinner_rush(RestaurantOwner* restaurant_owner) {
     restaurant_owner->cleanup_tables();
 }
 
+void custom_rush(RestaurantOwner* restaurant_owner) {
+    
+    Customer food_name_customer = Customer();
+    food_name_customer.setFoodName("meatloaf");
+    food_name_customer.setBudget(10);
+    food_name_customer.setMaxPatience(10);
+    FoodOrder food_name_customer_order = restaurant_owner->sell_generic_food(food_name_customer);
+
+    Customer budget_customer = Customer();
+    budget_customer.setFoodName("dontcare");
+    budget_customer.setBudget(50);
+    budget_customer.setMaxPatience(50);
+    FoodOrder budget_customer_order = restaurant_owner->sell_generic_food(budget_customer);
+
+    Customer impatient_customer = Customer();
+    impatient_customer.setFoodName("cake");
+    impatient_customer.setBudget(25);
+    impatient_customer.setMaxPatience(18);
+    FoodOrder impatient_customer_order = restaurant_owner->sell_generic_food(impatient_customer);
+
+    restaurant_owner->cleanup_tables();
+
+}
+
 
 int main()
 {
@@ -79,6 +105,7 @@ int main()
     breakfast_rush(&local_restaurant_owner);
     lunch_rush(&local_restaurant_owner);
     dinner_rush(&local_restaurant_owner);
+    custom_rush(&local_restaurant_owner);
 
     local_restaurant_owner.get_total_sales();
 }

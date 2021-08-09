@@ -2,25 +2,28 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\Customer.dll</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\Customer.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\Core.dll</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\FoodOrder.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\Asparagus.dll</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\Core.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\Cake.dll</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\Asparagus.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\Meatloaf.dll</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\Cake.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\RestaurantOwner.dll</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\Meatloaf.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Vic\Documents\code_uc\soft_arch\assign6_7\CookingWithCPP\CookingWithCPP\x64\Debug\CookingWithCPP.exe</FullPath>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\RestaurantOwner.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\burkeb\Desktop\software_architecture\Final\CookingBackup\CookingWithCPP\x64\Debug\CookingWithCPP.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

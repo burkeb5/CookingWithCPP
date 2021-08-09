@@ -1,13 +1,16 @@
 // RestaurantOwner.cpp : Defines the exported functions for the DLL.
 //
-
+#pragma once
 #include "framework.h"
 #include <iostream>
+#include <string>
 #include "RestaurantOwner.h"
 
 #include "..\Asparagus\Asparagus.h"
 #include "..\Cake\Cake.h"
 #include "..\Meatloaf\Meatloaf.h"
+
+#include "..\FoodOrder\FoodOrder.h"
 
 
 // This is an example of an exported variable
@@ -78,6 +81,59 @@ void RESTAURANTOWNER_API RestaurantOwner::sell_asparagus(Customer c) {
     RestaurantOwner::dirty_tables = RestaurantOwner::dirty_tables + 1;
 
     std::cout << "\n";
+}
+
+FoodOrder RESTAURANTOWNER_API RestaurantOwner::sell_generic_food(Customer c) {
+
+    FoodOrder ord = FoodOrder::FoodOrder(c.getFoodName(), c.getBudget(), c.getMaxPatience());
+
+    if (c.getFoodName() == "asparagus") {
+        ord.setFoodName("asparagus");
+    }
+    else if (c.getFoodName() == "cake") {
+        ord.setFoodName("cake");
+    }
+    else if (c.getFoodName() == "meatloaf") {
+        ord.setFoodName("meatloaf");
+    }
+    else {
+        ord.setFoodName("none");
+    }
+
+    if (ord.getFoodName() == "none") {
+        if (c.getBudget() >= 24) {
+            ord.setFoodName("cake");
+        }
+        else if (c.getBudget() >= 10) {
+            ord.setFoodName("meatloaf");
+        }
+        else if (c.getBudget() >= 4) {
+            ord.setFoodName("asparagus");
+        }
+        else {
+            ord.setFoodName("none");
+        }
+    }
+
+    if (ord.getFoodName() == "asparagus" && ord.getBudget() >= 4 && ord.getMaxPatience() >= 10) {
+        sell_asparagus(c);
+        ord.setShouldFillOrder(true);
+    }
+    else if (ord.getFoodName() == "cake" && ord.getBudget() >= 24 && ord.getMaxPatience() >= 25) {
+        sell_cake(c);
+        ord.setShouldFillOrder(true);
+    }
+    else if (ord.getFoodName() == "meatloaf" && ord.getBudget() >= 10 && ord.getMaxPatience() >= 10) {
+        sell_meatloaf(c);
+        ord.setShouldFillOrder(true);
+    }
+    else {
+        std::cout << "The customer had an issue with one of the following:\n1) Picking a type of food\n2) Being able to pay for the meal\n3) Not having enough patience to wait for the meal.\nThe customer left without getting their order satisfied.\n\n";
+        ord.setShouldFillOrder(false);
+    }
+
+    return ord;
+
 }
 
 void RESTAURANTOWNER_API RestaurantOwner::get_total_sales() {

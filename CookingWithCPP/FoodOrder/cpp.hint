@@ -1,0 +1,2 @@
+#define FOODORDER_API __declspec(dllexport)
+#define FOODORDER_API __declspec(dllimport)
